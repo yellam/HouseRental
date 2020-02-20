@@ -1,0 +1,52 @@
+@charset "ISO-8859-1";
+
+#rental {
+	padding-left: 2%;
+	color: silver;
+}
+
+#header {
+	display: flex;
+	flex-basis: 50%;
+	border-style: solid;
+	background-color: teal;
+}
+
+#reg {
+	padding-left: 70%;
+}
+
+#banner {
+	padding-left: 10%;
+}
+
+#regbutton {
+	padding-left: 40%;
+	padding-top: 1%;
+}
+
+#Register {
+	padding-left: 44%;
+	padding-top: 10%;
+	color: red;
+}
+
+#menu {
+	padding-left: 40%;
+	padding-top: 2%;
+}
+
+#secondregbutton {
+	padding-left: 10%;
+	padding-top: 3%;
+}
+
+#log {
+	padding-left: 46%;
+	padding-top: 3%;
+	color: red;
+}
+
+#logmenu {
+	padding-left: 40%;
+}
