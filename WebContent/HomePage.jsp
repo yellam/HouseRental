@@ -13,14 +13,14 @@
 			<h1>RentalPortal</h1>
 		</div>
 		<div id="reg">
-			<a href="Registration.jsp" style="color: red"><h2>Registration</h2></a>
+			<a href="Registration.jsp" style="color: black"><h2>Registration</h2></a>
 			<div id="log">
-				<a href="LogIn.jsp" style="color: red"><h2>LogIn</h2></a>
+				<a href="LogIn.jsp" style="color: black"><h2>LogIn</h2></a>
 			</div>
 		</div>
 	</div>
 	<div id="banner">
-		<img src="house_PNG68.png" alt="houseImage">
+		<img style="width: 60%" src="house_PNG68.png" alt="houseImage">
 	</div>
 
 	<div id="regbutton">

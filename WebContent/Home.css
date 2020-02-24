@@ -17,18 +17,24 @@
 }
 
 #banner {
-	padding-left: 10%;
+	padding-left: 27%;
+	
 }
 
 #regbutton {
-	padding-left: 40%;
-	padding-top: 1%;
+	display:flex;
+	justify-content:center;
+	background-color: green;
+	color: white;
+	padding: 15px 50px;
+	font-size: 16px;
+	margin: 8px 6px;
 }
 
 #Register {
 	padding-left: 44%;
 	padding-top: 10%;
-	color: red;
+	color: black;
 }
 
 #menu {
@@ -42,11 +48,21 @@
 }
 
 #log {
-	padding-left: 46%;
+	padding-left: 40%;
+	padding-right:3%;
 	padding-top: 3%;
-	color: red;
+	color: black;
+}
+#logs{
+	padding-left: 70%;
 }
 
 #logmenu {
 	padding-left: 40%;
+}
+#sub{
+	padding-top: 3%;
+}
+.error{
+	color:red;
 }
