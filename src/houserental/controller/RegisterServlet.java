@@ -1,4 +1,4 @@
-package houserental.controller.User;
+package houserental.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -14,8 +14,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import houserental.dto.User.User;
-import houserental.util.Validations.Validations;
+import houserental.dto.User;
+import houserental.util.Validations;
 @WebServlet("/register")
 public class RegisterServlet extends HttpServlet{
 	
@@ -39,7 +39,7 @@ public class RegisterServlet extends HttpServlet{
 		user.setUsername(username);
 		user.setPassword(password);
 		user.setConfirmpassword(confirmpassword);
-	PrintWriter out=resp.getWriter();
+		PrintWriter out=resp.getWriter();
 		Validations validations=new Validations();
 		Map<String,String> errorMessages=validations.validate(user);
 		

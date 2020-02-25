@@ -1,13 +1,25 @@
-package houserental.service.Service;
+package houserental.service;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 
-import houserental.dto.User.User;
+import houserental.dto.User;
 
 public class Service {
+	
+	public User registrationService() {
+		
+		
+		
+		
+		return null;
+		
+	}
+	
+	
+	
 
 	public User logInService(User user) {
 

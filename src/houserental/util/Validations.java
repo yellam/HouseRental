@@ -1,9 +1,9 @@
-package houserental.util.Validations;
+package houserental.util;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import houserental.dto.User.User;
+import houserental.dto.User;
 
 public class Validations {
 	

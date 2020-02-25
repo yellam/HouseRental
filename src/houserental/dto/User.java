@@ -1,4 +1,4 @@
-package houserental.dto.User;
+package houserental.dto;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

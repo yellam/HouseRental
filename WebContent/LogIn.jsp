@@ -7,7 +7,7 @@
 <title>LogIn</title>
 <link rel="stylesheet" href="Home.css">
 </head>
-<body>
+<body background="key-2114046_1280.jpg">
 
 	<div id="header">
 		<div id="rental">
@@ -15,7 +15,7 @@
 		</div>
 		<div id="reg">
 			<a href="Registration.jsp" style="color: red"><h2>Registration</h2></a>
-			<div id="log">
+			<div id="homepage">
 				<a href="HomePage.jsp" style="color: red"><h2>HomePage</h2></a>
 			</div>
 		</div>

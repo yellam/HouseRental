@@ -1,4 +1,4 @@
-package houserental.controller.User;
+package houserental.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -16,9 +16,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import houserental.dto.User.User;
-import houserental.service.Service.Service;
-import houserental.util.Validations.Validations;
+import houserental.dto.User;
+import houserental.service.Service;
+import houserental.util.Validations;
 
 @WebServlet("/LogInServlet")
 public class LogInServlet extends HttpServlet {
@@ -47,7 +47,7 @@ public class LogInServlet extends HttpServlet {
 			if (logInDetails != null) {
 				HttpSession session = req.getSession();
 				session.setAttribute("logInDetails", logInDetails);
-				resp.sendRedirect("welcome.jsp");
+				resp.sendRedirect("welcome.jsp"); 
 				out.print("Login succesful");
 			} else {
 				req.setAttribute("sqlerror", "some internal error occured");
