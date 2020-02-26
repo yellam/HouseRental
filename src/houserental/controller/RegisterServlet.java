@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import houserental.dto.User;
+import houserental.service.Service;
 import houserental.util.Validations;
 @WebServlet("/register")
 public class RegisterServlet extends HttpServlet{
@@ -48,22 +49,14 @@ public class RegisterServlet extends HttpServlet{
 			req.getRequestDispatcher("Registration.jsp").forward(req, resp);
 		}else {
 			
-		EntityManagerFactory entityManagerFactor=Persistence.createEntityManagerFactory("houserental");
-		EntityManager entityManager=entityManagerFactor.createEntityManager();
-		EntityTransaction transcation=entityManager.getTransaction();
-		out.println("inserted");
-		try {
-			transcation.begin();
-			entityManager.persist(user);
-			transcation.commit();
-			
-		}catch(Exception e) {
-			e.printStackTrace();
-			transcation.rollback();
-		}finally {
-			entityManager.close();
-			entityManagerFactor.close();
-		}
+		Service service=new Service();
+		User registerDetails=service.registrationService(user);
+	    if(registerDetails !=null) {
+	    	req.getRequestDispatcher("LogIn.jsp").forward(req, resp);
+	    }else {
+	    	req.setAttribute("sql Error","some internal error occured........");
+			req.getRequestDispatcher("Registration.jsp").forward(req, resp);
+	    }
 			
 		}
 		

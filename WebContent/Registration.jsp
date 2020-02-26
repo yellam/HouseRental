@@ -9,6 +9,7 @@
 </head>
 <body>
 
+
 <div id="header">
 		<div id="rental">
 			<h1>RentalPortal</h1>
@@ -17,7 +18,7 @@
 				<a href="LogIn.jsp" style="color: red"><h2>LogIn</h2></a>
 			</div>
 	</div>
-
+<div id="background">
 <form  action="register" method="post" name="regform" onsubmit=" return validate()">
 <div id="Register">
 
@@ -74,7 +75,9 @@
 <input type="submit" value="submit">
 </div>
 </div>
+</div>
 </form>
+
 <script src="validation.js"></script>
 </body>
 </html>

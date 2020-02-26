@@ -1,7 +1,17 @@
 @charset "ISO-8859-1";
-body{
+body,html{
+	height:100%;
+}
+#background{
 	background-image: url("architecture-1477101_1280.jpg");
 	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position:center;
+	height: 100%;
+	position:relative
+}
+#background1{
+	
 }
 #rental {
 	padding-left: 2%;
@@ -24,6 +34,7 @@ body{
 	
 }
 
+}
 #regbutton {
 	display:flex;
 	justify-content:center;
