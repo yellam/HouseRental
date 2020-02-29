@@ -8,6 +8,7 @@
         version="2.2">
 	<persistence-unit name="houserental">
 		<class>houserental.dto.User</class>
+		<class>houserental.dto.AddHouseRental</class>
 
 		<properties>
 

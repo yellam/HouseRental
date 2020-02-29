@@ -3,6 +3,7 @@ package houserental.util;
 import java.util.HashMap;
 import java.util.Map;
 
+import houserental.dto.RentalHouse;
 import houserental.dto.User;
 
 public class Validations {
@@ -49,17 +50,38 @@ public class Validations {
 			}
 			return true;
 		}
-	public Map<String,String> logInValidate(User user){
-		if(user.getEmail().isEmpty()) {
+	public Map<String,String> logInValidate(String email, String password){
+		if(email.isEmpty()) {
 			errorMessages.put("emailerror","Enter Email");
 		}
-		if(user.getPassword().isEmpty()) {
+		if(password.isEmpty()) {
 			errorMessages.put("passworderror","Enter Password");
 		}
 		
 		return errorMessages;
 				
 	}
+	public Map<String,String> addHouseRentalValidation(RentalHouse rental) {
+		
+		
+		/*if(rental.getSquareFeet().isEmpty()) {
+			errorMessages.put("squareFeeterror","Enter square feet");
+		}*/
+		if(rental.getRentalCost().isEmpty()) {
+			errorMessages.put("rentalCosterror","Enter rentalCost");
+		}
+		if(rental.getParkingAvaliable().isEmpty()) {
+			errorMessages.put("parkingAvaliableerror","Enter parkingAvaliable");
+		}
+		if(rental.getGarden().isEmpty()) {
+			errorMessages.put("gardenerror","choose garden");	
+		}
+		/*if(rental.getAddress().isEmpty()) {
+			errorMessages.put("addresserror","Enter Address");
+		}*/
+		return errorMessages;
+	}
+	
 	
 	
 

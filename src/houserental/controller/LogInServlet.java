@@ -29,26 +29,24 @@ public class LogInServlet extends HttpServlet {
 		String email = req.getParameter("email");
 		String password = req.getParameter("password");
 
-		User user = new User();
-		user.setEmail(email);
-		user.setPassword(password);
+		
 
 		PrintWriter out = resp.getWriter();
 
 		Validations validations = new Validations();
-		Map<String, String> errorMessages = validations.logInValidate(user);
+		Map<String, String> errorMessages = validations.logInValidate(email, password);
 
 		if (errorMessages.size() > 0) {
 			req.setAttribute("errorMessages", errorMessages);
 			req.getRequestDispatcher("LogIn.jsp").forward(req, resp);
 		} else {
 			Service service = new Service();
-			User logInDetails = service.logInService(user);
-			if (logInDetails != null) {
+			User user = service.logInService(email, password);
+			if (user != null) {
 				HttpSession session = req.getSession();
-				session.setAttribute("logInDetails", logInDetails);
-				resp.sendRedirect("welcome.jsp"); 
-				out.print("Login succesful");
+				session.setAttribute("user", user);
+				req.getRequestDispatcher("WelcomeHouserental.jsp").forward(req, resp);
+				
 			} else {
 				req.setAttribute("sqlerror", "some internal error occured");
 				req.getRequestDispatcher("LogIn.jsp").forward(req, resp);

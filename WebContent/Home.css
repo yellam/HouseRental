@@ -10,9 +10,7 @@ body,html{
 	height: 100%;
 	position:relative
 }
-#background1{
-	
-}
+
 #rental {
 	padding-left: 2%;
 	color: silver;
@@ -34,7 +32,6 @@ body,html{
 	
 }
 
-}
 #regbutton {
 	display:flex;
 	justify-content:center;
@@ -84,4 +81,24 @@ body,html{
 }
 .error{
 	color:red;
+}
+#head{
+	display: flex;
+	flex-basis: 50%;
+	border-style: solid;
+	background-color: teal;
+}
+#welcomemenu{
+	padding-left: 60%;
+	padding-top: 2%;
+}
+#addhousehead{
+	padding-top: 6%;
+}
+#addhousesub{
+	padding-top: 3%;
+}
+#addhousemenu{
+	color:green;
+	padding-right: 12%;
 }
