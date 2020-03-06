@@ -8,10 +8,13 @@
 <link rel="stylesheet" href="Home.css">
 </head>
 <body>
+<div id="logoutid">
+<a href="logout"><button style="color:red">LOGOUT</button></a>
+</div>
 
 <div id="addhousehead">
 <center>
-<form action="addhouserental" method="post" >
+<form action="addhouserental" method="post"  enctype="multipart/form-data">
 
 <div id="addhousemenu">
 <h1>AddHouseRental</h1>
@@ -51,6 +54,12 @@
 <td><textarea name="address" rows="5" cols="50"></textarea></td>
 <td><span style="color:red">${errorMessages.addresserror}</span></td>
 </tr>
+<tr>
+<td><label>Image</label></td>
+<td><input type="file" name="houseImage"></td>
+</tr>
+
+
 </table>
 <div id="addhousesub">
 <input type="submit" value="submit">

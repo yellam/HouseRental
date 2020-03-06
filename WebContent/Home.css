@@ -2,18 +2,50 @@
 body,html{
 	height:100%;
 }
-#background{
-	background-image: url("architecture-1477101_1280.jpg");
+#para{
+	padding-top:4%;
+	padding-left: 20%;
+	margin-right: 20%;
+}#readmore{
+	
+	padding-left: 76%;
+}#footer{
+	background-color:teal;
+	margin-top:3%;
+	padding-top:1%;
+	padding-bottom:1%;
+	padding-left: 70%;
+	
+}
+#homebackground{
+	background-image: url("Images/photo-1451934403379-ffeff84932da.jpeg");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-position:center;
 	height: 100%;
-	position:relative
+	position:relative;
+	
+}
+
+#background{
+	background-image: url("Images/architecture-1477101_1280.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position:center;
+	height: 100%;
+	position:relative;
 }
 
 #rental {
 	padding-left: 2%;
 	color: silver;
+}#logoutid{
+	display: flex;
+	padding-top:3%;
+	padding-left:80%;
+	flex-basis: 50%;
+	border-style: solid;
+	background-color: teal;
 }
 
 #header {
@@ -60,7 +92,7 @@ body,html{
 
 #log {
 	padding-left: 40%;
-	padding-right:3%;
+	padding-right:10%;
 	padding-top: 3%;
 	color: black;
 }
@@ -77,7 +109,7 @@ body,html{
 }
 #sub{
 	padding-top: 3%;
-	padding-left: 10%;
+	
 }
 .error{
 	color:red;

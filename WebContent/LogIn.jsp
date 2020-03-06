@@ -7,7 +7,7 @@
 <title>LogIn</title>
 <link rel="stylesheet" href="Home.css">
 </head>
-<body id="background1" background="key-2114046_1280.jpg">
+<body id="background1" background="Images/key-2114046_1280.jpg">
 
 	<div id="header">
 		<div id="rental">

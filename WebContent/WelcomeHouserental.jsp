@@ -16,6 +16,7 @@
 <a href="addhouserental.jsp"><button style="color:red">AddNewRentals</button></a>
 <a href="ExistingRental.jsp"><button style="color:red">ExistingRental</button></a>
 <a href="history.jsp"><button style="color:red">History</button></a>
+<a href="logout"><button style="color:red">LOGOUT</button></a>
 </div>
 
 

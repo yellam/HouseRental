@@ -1,6 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
      <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+     
+     
+     <c:set var="houseimages" value="${pageContext.request.contextPath}/Images"></c:set>
+     
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -25,13 +29,14 @@
 
 <c:forEach var="userdetails" items="${details}">
 <tr>
+<td></td>
 <td>${userdetails.house}</td>
 <td>${userdetails.squareFeet}</td>
 <td>${userdetails.rentalCost}</td>
 <td>${userdetails.parkingAvaliable}</td>
 <td>${userdetails.garden}</td>
 <td>${userdetails.address}</td>
-
+<td><img width="250" height="250" src="${houseimages}/${userdetails.userId}.jpg"></td>
 </tr>
 </c:forEach>
 </table>
